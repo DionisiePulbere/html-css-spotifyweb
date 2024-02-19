@@ -10,30 +10,148 @@
 /*-------------------------- 
     GENERAL 
 --------------------------*/
+img{
+    max-width: 100%;
+}
 
+.flex{
+    display: flex;
+}
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+    line-height: 2.3;
+}
+
+li img{
+    width: 20px;
+    filter: invert(50%);
+    margin-right: 6px;
+    margin-left: 14px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #727272;
+}
+
+.overflow{
+    overflow-y: auto;
+}
+
+.grow{
+    flex-grow: 1;
+}
 /*-------------------------- 
     TYPOGRAPHY 
 --------------------------*/
 body{
     font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #141923;
 }
 
+.txt-grey{
+    color: #727272;
+}
+
+.txt-upperc{
+    text-transform: uppercase;
+}
+
+.txt-white{
+    color: white;
+}
+
+h1{
+    font-size: 12px;
+}
 
 /*-------------------------- 
     HEADER
 --------------------------*/
+header{
+    background-color: #000000;
+    width: 230px;
+    padding: 16px 16px;
+    height: calc(100vh - 90px);
+    padding-bottom: 0;
+}
 
+header .logo{
+    width: 130px;
+}
 
+nav{
+    padding: 30px 0;
+    margin-left: -16px;
+}
+
+nav ul li:first-child{
+    border-left: 2px solid lime;
+    
+}
+
+header button{
+    padding: 10px 0;
+    text-align: left;
+}
+
+header button i{
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+header button div{
+    margin-top: 12px;
+}
+
+header button img{
+    width: 14px;
+    margin-right: 10px;
+}
+
+.circle{
+    background-color: gray;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+header button:last-child{
+    border-top: 1px solid grey ;
+    
+}
 /*-------------------------- 
     MAIN
 --------------------------*/
-
+main{
+    height: calc(100vh - 90px);
+}
 
 /*-------------------------- 
     FOOTER
 --------------------------*/
-
+footer{
+    height: 90px;
+    background-color: #282828;
+}
 
 /*-------------------------- 
     RESPONSIVE
