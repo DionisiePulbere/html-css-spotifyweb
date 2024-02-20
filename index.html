@@ -15,31 +15,32 @@
 </head>
 <body>
     <div class="container-vh flex">
-        <header class="flex flex-column txt-gray">
-            <img class="logo" src="img/logo.svg" alt="">
-            <nav>
-                <ul>
-                    <li class="flex"><img src="img/home.svg" alt="Home"><div><a href="#">Home</a></div></li>
-                    <li class="flex"><img src="img/search.svg" alt="Cerca"><div><a href="#">Cerca</a></div></li>
-                    <li class="flex"><img src="img/libreria.svg" alt="Libreria"><a href="#">La tua libreria</a></li>
-                </ul>
-            </nav>
-            <h1 class="txt-upperc txt-white">playlist</h1>
-            <button class="txt-gray flex"> <i class="fa-solid fa-square-plus"></i><div>Crea Playlist</div></button>
-            <div class="overflow grow">
-                <ul>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                </ul>
-            </div>
-            <button class="txt-gray flex"><img src="img/download.svg" alt="Scarica"><small>Installa app</small></button>
-            <button class="flex"><img class="circle" src="img/profile.svg" alt="profilo"><a class="txt-white" href="#">John Doe</a></button>
-        </header>
+        <header class="flex flex-column overflow txt-gray">
+                <img class="logo" src="img/logo.svg" alt="">
+                <img class="logo-mobile" src="img/logo-small.svg" alt="">
+                <nav>
+                    <ul>
+                        <li class="flex"><img src="img/home.svg" alt="Home"><div><a href="#">Home</a></div></li>
+                        <li class="flex"><img src="img/search.svg" alt="Cerca"><div><a href="#">Cerca</a></div></li>
+                        <li class="flex"><img src="img/libreria.svg" alt="Libreria"><a href="#">La tua libreria</a></li>
+                    </ul>
+                </nav>
+                <h1 class="txt-upperc txt-white">playlist</h1>
+                <button class="txt-gray flex"> <i class="fa-solid fa-square-plus"></i><div>Crea Playlist</div></button>
+                <div class="overflow grow">
+                    <ul>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+                <button class="flex"><img class="txt-gray" src="img/download.svg" alt="Scarica"><small class="txt-gray">Installa app</small></button>
+                <button class="flex"><img class="circle" src="img/profile.svg" alt="profilo"><a class="txt-white" href="#">John Doe</a></button>
+            </header>
         <main class="overflow">
             <section class="top-main flex">
                 <div>
@@ -48,7 +49,7 @@
             </section>
             <section class="bottom-main">
                    <nav class="txt-gray txt-upperc">
-                        <ul class="flex">
+                        <ul class="flex wrap">
                             <li><a href="#">in evidenza</a></li>
                             <li><a href="#">podcast</a></li>
                             <li><a href="#">classifiche</a></li>
@@ -180,14 +181,11 @@
                         <li><i class="fa-solid fa-list"></i></li>
                         <li><i class="fa-solid fa-display"></i></li>
                         <li><i class="fa-solid fa-volume-high"></i></li>
-                        <li class="flex">
-                            <div class="bar">
-                                <div class="bar-inside position">
-                                    <div class="circle-bar"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                </ul>
+                <div class="bar ">
+                    <div class="bar-inside position">
+                        <div class="circle-bar"></div>
+                    </div>
                 </div>
             </div>
         </div>
