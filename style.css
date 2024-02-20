@@ -61,6 +61,18 @@ a{
 .container{
     padding: 0 20px;
 }
+
+.position{
+    position: relative;
+}
+
+.appear{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50% -50%);
+    display: none;
+}
 /*-------------------------- 
     TYPOGRAPHY 
 --------------------------*/
@@ -114,7 +126,6 @@ header nav{
 
  header nav ul li:first-child{
     border-left: 2px solid lime;
-    
 }
 
 header button{
@@ -136,7 +147,7 @@ header button img{
     margin-right: 10px;
 }
 
-.circle{
+header .circle{
     background-color: gray;
     border-radius: 50%;
     width: 20px;
@@ -145,15 +156,14 @@ header button img{
 
 header button:last-child{
     border-top: 1px solid grey ;
-    
 }
+
 /*-------------------------- 
     MAIN
 --------------------------*/
 main{
     width: 100%;
     height: calc(100vh - 90px);
-    display: block;
 }
 
 /* top main */
@@ -207,10 +217,47 @@ main{
     padding: 20px 10px;
 }
 
+.bottom-main h2{
+    padding-bottom: 16px;
+}
+
 .bottom-main h3{
     padding-top: 12px;
     padding-bottom: 6px;
 }
+
+.bottom-main .circle{
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.bottom-main img.circle{
+    margin: 30px 0;
+    margin-right: 20px;
+}
+
+.appear i{
+    font-size: 40px;
+}
+
+li a:hover{
+    color: white;
+}
+
+header button:hover{
+    color: white;
+}
+
+.card img:hover, .appear:hover{
+    opacity: calc(50%);
+}
+
+.card img:hover + div.appear, .appear:hover{
+    display: block;
+}
+
 /*-------------------------- 
     FOOTER
 --------------------------*/
