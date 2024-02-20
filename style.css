@@ -58,6 +58,10 @@ a{
     flex-grow: 1;
 }
 
+.container-vh{
+    height: calc(100vh - 90px);
+}
+
 .container{
     padding: 0 20px;
 }
@@ -68,9 +72,9 @@ a{
 
 .appear{
     position: absolute;
-    top: 50px;
-    left: 50px;
-    transform: translate(-50% -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
 }
 /*-------------------------- 
@@ -84,7 +88,7 @@ body{
     color: white;
 }
 
-.txt-grey{
+.txt-gray{
     color: #727272;
 }
 
@@ -109,9 +113,9 @@ h1{
 --------------------------*/
 header{
     background-color: #000000;
+    flex-shrink: 0;
     width: 230px;
     padding: 16px 16px;
-    height: calc(100vh - 90px);
     padding-bottom: 0;
 }
 
@@ -161,11 +165,6 @@ header button:last-child{
 /*-------------------------- 
     MAIN
 --------------------------*/
-main{
-    width: 100%;
-    height: calc(100vh - 90px);
-}
-
 /* top main */
 .top-main{
     background-color: rgba(0, 0, 0, 0.6);
@@ -187,7 +186,7 @@ main{
 }
 
 .top-main button:hover{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* bottom main */
@@ -266,6 +265,119 @@ footer{
     background-color: #282828;
 }
 
+footer .container{
+    justify-content: space-between;
+}
+/* left */
+footer .container .left{
+    padding-top: 20px;
+}
+
+footer img{
+    width: 50px;
+}
+
+footer .brano{
+    padding: 10px;
+    padding-right: 30px;
+}
+
+footer .left button{
+    margin-right: 14px;
+}
+
+footer .left button:hover{
+    color: white;
+}
+
+footer .left small:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/* center */
+footer .player{
+    padding-top: 16px;
+}
+footer .player li{
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+footer .player li:first-child{
+    margin-left: 50px;
+}
+
+footer .player li:nth-child(3){
+    font-size: 36px;
+    transform: translate(0 , -10px);
+}
+
+footer ul{
+    line-height: normal;
+}
+
+.bar{
+    height: 2px;
+    margin: 0 20px;
+    width: 80%;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.center .player > div{
+    align-items: center;
+}
+
+.bar-inside{
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: translate(-1px, -2px);
+    justify-content: flex-end;
+}
+
+.bar:hover .bar-inside{
+    border:2px solid lime;
+}
+
+footer .center ul li:nth-child(3):hover i{
+    font-size: 38px;
+}
+/* right */
+footer .right{
+    padding-top: 40px;
+}
+
+footer .right li{
+    margin-left: 20px;
+}
+
+footer .right li:last-child{
+    margin-left: 0;
+}
+
+footer .right li.flex{
+    align-items: center;
+}
+
+.bar .bar-inside .circle-bar{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: white;
+    top: -5px;
+    right: -5px;
+    display: none;
+}
+.right .bar{
+    width: 80px;
+}
+
+.bar:hover .circle-bar{
+    display: block;
+}
 /*-------------------------- 
     RESPONSIVE
 --------------------------*/
